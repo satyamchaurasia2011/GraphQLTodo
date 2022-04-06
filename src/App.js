@@ -11,7 +11,7 @@ import {
 } from "@apollo/client";
 
 function App() {
-  const authToken = process.env.REACT_APP_AUTH_TOKEN;
+  const authToken = 'gkR5axY29MiWDYalkqWP9B4HVIMUf23auVGFZVvmQ3uyNIa1oEO4t5tuSg3cFPtQ';
   const client = (authToken) => {
     return new ApolloClient({
       link: new HttpLink({
