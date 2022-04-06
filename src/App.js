@@ -1,5 +1,6 @@
 import './App.css';
 import Todo from './components/Todo';
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -10,7 +11,7 @@ import {
 } from "@apollo/client";
 
 function App() {
-  const authToken = 'gkR5axY29MiWDYalkqWP9B4HVIMUf23auVGFZVvmQ3uyNIa1oEO4t5tuSg3cFPtQ';
+  const authToken = process.env.REACT_APP_AUTH_TOKEN;
   const client = (authToken) => {
     return new ApolloClient({
       link: new HttpLink({
