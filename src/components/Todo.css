@@ -1,0 +1,99 @@
+.todo{
+    margin-top: 2%;
+    text-align: center;
+}
+
+.todo>h1{
+    font-size: 73px;
+    font-weight: 500;
+    color: palevioletred;
+    opacity: 60%;
+}
+
+.todo>div{
+    margin-top: 20px;
+    margin:50px  auto;
+    width: 40%;
+    box-shadow: 31px 22px 111px -21px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 31px 22px 111px -21px rgba(0,0,0,0.67);
+    -moz-box-shadow: 31px 22px 111px -21px rgba(0,0,0,0.67);
+    background-color: white;
+}
+
+form>input{
+    padding: 20px 30px 20px 10px ;
+   
+    border: none;
+    font-size: 23px;
+    outline: none;
+    width: 80%;
+    box-shadow: inset 0 -2px 1px rgb(0 0 0 / 3%);
+}
+::placeholder{
+    color: rgb(187, 187, 187);
+    font-weight: 400;
+    font-style: italic;
+}
+
+form>i{
+    padding: 0;
+    width: 10%;
+    margin-top: 10px !important;
+    font-size: 28px !important;
+    color: rgb(187, 187, 187);
+    cursor: pointer;
+}
+form>i:hover{
+    color: black !important;
+}
+
+
+.btm-nav{
+    display: flex;
+    padding: 20px 17px;
+    border: 1px solid rgb(218, 214, 214);
+    justify-content: space-between;
+}
+.btm-nav>div>a{
+    color: inherit;
+    margin: 3px;
+    padding: 3px 7px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+a:active, a:hover{
+    border: 1px solid rgb(189, 188, 188) !important;
+    background-color: rgb(250, 250, 250) !important;
+}
+.selected{
+    border-color: rgba(175, 47, 47, 0.2) !important;
+}
+.all-todos>div{
+    padding: 17px 17px;
+    border: 1px solid rgb(218, 214, 214);
+    display: flex;
+    align-items: center;
+}
+.all-todos>div>input{
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+}
+.all-todos>div>p{
+    font-size: 18px;
+    margin-left: 22px;
+    text-align: left;
+}
+.all-todos>div>i{
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.done{
+ text-decoration: line-through;
+ color: rgb(207, 207, 207);
+}
